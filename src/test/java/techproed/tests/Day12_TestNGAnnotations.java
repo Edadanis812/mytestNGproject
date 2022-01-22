@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 public class Day12_TestNGAnnotations {
     /*
     @Test: Creates test case.
-    @BeforeMethod: runs before each @Test annotation
-    @AfterMethod : runs after each @Test annotation
+    @BeforeMethod: runs before each @Test annotation.Same as @Before annotation in JUnit
+    @AfterMethod : runs after each @Test annotation. Same as @After annotation in JUnit
     @Ignore      : ignores or kips the test case.
     @Test(enabled = false): disables the test case. You cannot run that test case.
 
@@ -34,7 +34,7 @@ public class Day12_TestNGAnnotations {
         System.out.println("This is after method");
     }
     //Test can have parameter.
-    //(enabled = false), we run it. This case will skip.
+    //(enabled = false), we can not run it. This case will skip.
     @Test(enabled = false)
     public void test1(){
         System.out.println("This is test 1");

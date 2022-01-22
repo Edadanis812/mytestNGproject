@@ -31,6 +31,16 @@ public class LoginPage {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
 
+    public void loginApplication(String userName,String pass){
+        //Creating a reusable login method
+        //I will call this to login in the test classes
+        //When we need it, we can call method very quick
+        loginDropdown.click();
+        signInButton.click();
+        username.sendKeys(userName);
+        password.sendKeys(pass);
+        loginButton.click();
+    }
 
 
 }

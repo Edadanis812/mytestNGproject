@@ -45,8 +45,8 @@ public class Day12_Assertions {
 
         //Be careful when you use soft assertion
         //We must use assertAll() to check which one pass which one fails.
-
         softAssert.assertAll();
+
 
 
 
